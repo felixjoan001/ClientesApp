@@ -1,0 +1,23 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/navigation_Persons">
+
+    <fragment
+        android:id="@+id/navigation_Store"
+        android:name="com.example.aw_person.ui.store.StoreFragment"
+        android:label="@string/store"
+        tools:layout="@layout/fragment_store" />
+
+    <fragment
+        android:id="@+id/navigation_Vendors"
+        android:name="com.example.aw_person.ui.vendor.VendorFragment"
+        android:label="@string/vendor"
+        tools:layout="@layout/fragment_vendor" />
+
+    <fragment
+        android:id="@+id/navigation_Persons"
+        android:name="com.example.aw_person.ui.home.HomeFragment"
+        android:label="@string/persons"
+        tools:layout="@layout/fragment_person" />
+</navigation>

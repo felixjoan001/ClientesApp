@@ -1,0 +1,29 @@
+#Felix Joan Molina Lucas
+
+en caso de que al ejecutar el comando (npm i run dev)
+
+de el siguiente error nodemon" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+escribir npm i nodemon
+
+si sigue fallando borrar la carpeta node_modules y ejecutar el comando (npm i)
+luego npm i nodemon y por ultimo npm run dev
+
+debería dar estos resultados 
+
+> api_node@1.0.0 dev
+> nodemon ./src/index.js
+
+[nodemon] 3.1.7
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node ./src/index.js`
+Server running on port http://192.168.100.2:3000
+
+si se cambia de ip modificar index y connection
+
+index -> Api_Node\src
+
+conecction -> Api_Node\src\database

@@ -1,0 +1,4 @@
+la aplicación funciona bien se conecta mediante node.js a nuestra base de datos 
+
+en ocasiones puede ser que no haya una conexión si cuando se active el api_node no muestra una conexión con sql, se tendrá que verificar que se tenga el puerto activo y también verificar la ip que se esta usando
+y usar el dirección ipv4 en mi caso es 192.168.100.2

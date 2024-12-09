@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activitys.EditVendorFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Vendor Name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del Proveedor">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextVendorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Account Number -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número de Cuenta">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextAccountNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Preferred Vendor Checkbox -->
+        <CheckBox
+            android:id="@+id/checkBoxPreferredVendor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proveedor Preferido" />
+
+        <!-- Active Flag Checkbox -->
+        <CheckBox
+            android:id="@+id/checkBoxActiveFlag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activo" />
+
+        <!-- Update Button -->
+        <Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Actualizar" />
+
+        <!-- Delete Button -->
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Eliminar"
+            android:textColor="#FF0000" />
+    </LinearLayout>
+
+</FrameLayout>
